@@ -164,7 +164,14 @@ Contemporary Kodomo Modernism global system: warm cream/yellow, sky blue, soft g
   }
 
   .section-title {
-    @apply font-display text-4xl font-black leading-[1.05] tracking-[-0.035em] text-[#243129] md:text-6xl;
+    @apply text-balance break-words font-display text-3xl font-black leading-[1.08] tracking-[-0.03em] text-[#243129] sm:text-4xl md:text-6xl;
+  }
+
+  .readable-ampersand {
+    @apply mx-[0.08em] inline-block align-baseline font-sans font-black tracking-normal text-inherit;
+    font-family: "Noto Sans", "Noto Sans JP", "Noto Sans SC", system-ui, sans-serif;
+    font-size: 0.82em;
+    line-height: 1;
   }
 
   .section-copy {
@@ -172,7 +179,7 @@ Contemporary Kodomo Modernism global system: warm cream/yellow, sky blue, soft g
   }
 
   .contact-card {
-    @apply flex items-start gap-4 rounded-[1.6rem] bg-white p-5 font-bold leading-7 text-[#405347] shadow-lg transition hover:-translate-y-0.5 hover:text-[#0d5b75] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d5b75];
+    @apply flex items-start gap-4 break-words rounded-[1.6rem] bg-white p-5 font-bold leading-7 text-[#405347] shadow-lg transition hover:-translate-y-0.5 hover:text-[#0d5b75] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d5b75];
   }
 
   .contact-card svg {

@@ -224,6 +224,20 @@ function scrollToId(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+function ReadableText({ text }: { text: string }) {
+  const parts = text.split("&");
+  return (
+    <>
+      {parts.map((part, index) => (
+        <span key={`${part}-${index}`}>
+          {part}
+          {index < parts.length - 1 ? <span className="readable-ampersand" aria-label="and">&amp;</span> : null}
+        </span>
+      ))}
+    </>
+  );
+}
+
 function SchoolMap() {
   return (
     <MapView
@@ -263,12 +277,12 @@ export default function Home() {
               <Languages aria-hidden="true" />
             </span>
             <span>
-              <span className="block font-display text-lg font-black leading-tight">Winters Chapel</span>
-              <span className="block text-xs font-bold uppercase tracking-[0.22em] text-[#51725b]">Kindergarten & Day Care</span>
+              <span className="block max-w-[12rem] text-wrap font-display text-sm font-black leading-tight sm:max-w-none sm:text-lg">Winters Chapel ウインタースチャペル</span>
+              <span className="block max-w-[12rem] text-wrap text-[0.62rem] font-bold uppercase leading-snug tracking-[0.12em] text-[#51725b] sm:max-w-none sm:text-xs sm:tracking-[0.22em]">Kindergarten <span className="readable-ampersand" aria-label="and">&amp;</span> Day Care 幼稚園・保育園</span>
             </span>
           </button>
 
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
+          <nav className="hidden items-center gap-1 2xl:flex" aria-label="Primary navigation">
             {navIds.map((id, index) => (
               <button key={id} onClick={() => scrollToId(id)} className="rounded-full px-4 py-2 text-sm font-bold text-[#405347] transition hover:bg-white hover:text-[#0d5b75] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d5b75]">
                 {t.nav[index]}
@@ -276,7 +290,7 @@ export default function Home() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-2 md:flex" aria-label="Language selector">
+          <div className="hidden items-center gap-2 2xl:flex" aria-label="Language selector">
             {(["en", "ja", "zh"] as Lang[]).map((code) => (
               <button key={code} onClick={() => setLang(code)} className={`rounded-full border px-3 py-2 text-sm font-black transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d5b75] ${lang === code ? "border-[#0d5b75] bg-[#0d5b75] text-white shadow-lg" : "border-[#c6ddb9] bg-white text-[#405347] hover:border-[#0d5b75]"}`} aria-pressed={lang === code}>
                 {content[code].langLabel}
@@ -284,12 +298,12 @@ export default function Home() {
             ))}
           </div>
 
-          <button className="rounded-full bg-white p-3 shadow-md lg:hidden" onClick={() => setMenuOpen((value) => !value)} aria-label="Open navigation menu" aria-expanded={menuOpen}>
+          <button className="rounded-full bg-white p-3 shadow-md 2xl:hidden" onClick={() => setMenuOpen((value) => !value)} aria-label="Open navigation menu" aria-expanded={menuOpen}>
             {menuOpen ? <X /> : <Menu />}
           </button>
         </div>
         {menuOpen && (
-          <div className="border-t border-[#d7eec9] bg-[#fff9ea] p-4 lg:hidden">
+          <div className="border-t border-[#d7eec9] bg-[#fff9ea] p-4 2xl:hidden">
             <div className="grid gap-2">
               {navIds.map((id, index) => (
                 <button key={id} onClick={() => { scrollToId(id); setMenuOpen(false); }} className="rounded-2xl bg-white px-4 py-3 text-left font-bold shadow-sm">
@@ -314,7 +328,7 @@ export default function Home() {
           <div className="container grid items-center gap-10 lg:grid-cols-[1.02fr_0.98fr]">
             <div className="max-w-3xl">
               <p className="mb-5 inline-flex rounded-full border border-[#c6ddb9] bg-white/80 px-4 py-2 text-sm font-black uppercase tracking-[0.22em] text-[#51725b] shadow-sm">{t.eyebrow}</p>
-              <h1 className="font-display text-4xl font-black leading-[1.05] tracking-[-0.04em] text-[#243129] md:text-6xl lg:text-7xl">{t.title}</h1>
+              <h1 className="text-balance break-words font-display text-3xl font-black leading-[1.06] tracking-[-0.035em] text-[#243129] sm:text-4xl md:text-6xl lg:text-7xl"><ReadableText text={t.title} /></h1>
               <p className="mt-5 font-display text-2xl font-bold text-[#0d5b75] md:text-3xl">{t.subtitle}</p>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-[#405347]">{t.intro}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -389,7 +403,7 @@ export default function Home() {
             </div>
             <div>
               <p className="section-kicker">02 · {t.nav[1]}</p>
-              <h2 className="section-title">{t.curriculumTitle}</h2>
+              <h2 className="section-title"><ReadableText text={t.curriculumTitle} /></h2>
               <p className="section-copy">{t.curriculumText}</p>
               <div className="mt-8 grid gap-4">
                 {t.philosophyCards.map((card: string[]) => {
@@ -431,7 +445,7 @@ export default function Home() {
           <div className="container grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
               <p className="section-kicker">04 · {t.nav[3]}</p>
-              <h2 className="section-title">{t.qualityTitle}</h2>
+              <h2 className="section-title"><ReadableText text={t.qualityTitle} /></h2>
               <p className="section-copy">{t.qualityText}</p>
               <blockquote className="mt-8 rounded-[2rem] border-l-8 border-[#f8ca55] bg-white p-6 font-display text-2xl font-bold leading-snug text-[#243129] shadow-xl">
                 “{t.qualityQuote}”
@@ -451,7 +465,7 @@ export default function Home() {
           <div className="container">
             <div className="mb-10 max-w-3xl">
               <p className="section-kicker">05 · {t.nav[4]}</p>
-              <h2 className="section-title">{t.classroomTitle}</h2>
+              <h2 className="section-title"><ReadableText text={t.classroomTitle} /></h2>
               <p className="section-copy">{t.classroomIntro}</p>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -541,7 +555,7 @@ export default function Home() {
             <div>
               <SchoolMap />
               <div className="mt-5 rounded-[2rem] bg-white p-5 text-sm leading-7 text-[#526458] shadow-lg">
-                <strong className="text-[#243129]">Winters Chapel Kindergarten & Day Care Center</strong><br />
+                <strong className="text-[#243129]"><ReadableText text="Winters Chapel Kindergarten & Day Care Center" /></strong><br />
                 {t.footer}
               </div>
             </div>
@@ -552,7 +566,7 @@ export default function Home() {
       <footer className="border-t border-[#d7eec9] bg-[#243129] py-10 text-white">
         <div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="font-display text-2xl font-black">Winters Chapel Kindergarten & Day Care Center</p>
+            <p className="font-display text-2xl font-black"><ReadableText text="Winters Chapel Kindergarten & Day Care Center" /></p>
             <p className="mt-2 text-white/75">{t.address} · {t.phone}</p>
           </div>
           <p className="text-sm text-white/70">{t.footer}</p>

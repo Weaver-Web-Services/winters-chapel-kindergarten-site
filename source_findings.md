@@ -43,3 +43,7 @@ Because the user requested real school photos rather than stock imagery, these r
 ## Preview QA observations
 
 The development preview loads the redesigned one-page site with the selected warm paper-texture visual system, real school exterior and classroom imagery in the hero, and visible primary navigation. The English language loads by default, and the Japanese language button successfully changes navigation, headline, body text, and calls to action without leaving the page. The large display type is intentionally editorial and high-contrast against the light generated background; text remains dark on the high-key hero asset according to contrast guidance. The preview confirms that major sections appear in the extracted page text, including Programs, Curriculum, Events, Quality, Classroom, Teachers, Gallery, and Contact.
+
+## Responsive refinement verification
+
+After the bilingual header text was added, the standard preview width showed crowding in the top navigation. The header was refined so full navigation and language buttons only appear on very wide screens, while standard desktop, tablet, and mobile widths use a compact menu button. The responsive menu was tested in preview and displays all navigation links plus English, Japanese, and Chinese language controls in a stacked accessible layout. The hero title and affected headings now render ampersands using a clearer sans-serif override instead of the decorative display ampersand.
