@@ -1,0 +1,72 @@
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/20160627classpictures.jpg (size: 175328 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/20160627classpictures_54bea485.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/artprojectclassroom.jpg (size: 81057 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/artprojectclassroom_4eb611c3.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/christmas01.jpg (size: 76558 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/christmas01_2d68f610.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/japanfest2005.jpg (size: 73642 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/japanfest2005_b14ef741.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/lineupclassroom.jpg (size: 667621 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/lineupclassroom_3aa00aef.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/lunchtimeclassroom.jpg (size: 645286 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/lunchtimeclassroom_11c17963.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/lunchtimeclassroom2.jpg (size: 765522 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/lunchtimeclassroom2_fc6bd5c0.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/lunchtimeclassroom3.jpg (size: 690561 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/lunchtimeclassroom3_6aa507c9.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/lunchtimeclassroom4.jpg (size: 776288 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/lunchtimeclassroom4_275b2fbc.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/playground1.jpeg (size: 116369 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/playground1_0f714785.jpeg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/summerschool2019.jpg (size: 124620 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/summerschool2019_a8c7422c.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/teacher2023-9.jpg (size: 438871 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/teacher2023-9_444d1a93.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/teacher2023.jpg (size: 592306 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/teacher2023_29f70a2e.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/wint1.jpg (size: 53050 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/wint1_d6b960d4.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/wint2.jpg (size: 182665 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/wint2_dcea68dd.jpg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/xmas.jpeg (size: 76892 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/xmas_85a27b5b.jpeg
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/winters-chapel/xmas2018.jpg (size: 115765 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/xmas2018_dfb230a0.jpg
+
+========== Upload Summary ==========
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/20160627classpictures.jpg -> /manus-storage/20160627classpictures_54bea485.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/artprojectclassroom.jpg -> /manus-storage/artprojectclassroom_4eb611c3.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/christmas01.jpg -> /manus-storage/christmas01_2d68f610.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/japanfest2005.jpg -> /manus-storage/japanfest2005_b14ef741.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/lineupclassroom.jpg -> /manus-storage/lineupclassroom_3aa00aef.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/lunchtimeclassroom.jpg -> /manus-storage/lunchtimeclassroom_11c17963.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/lunchtimeclassroom2.jpg -> /manus-storage/lunchtimeclassroom2_fc6bd5c0.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/lunchtimeclassroom3.jpg -> /manus-storage/lunchtimeclassroom3_6aa507c9.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/lunchtimeclassroom4.jpg -> /manus-storage/lunchtimeclassroom4_275b2fbc.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/playground1.jpeg -> /manus-storage/playground1_0f714785.jpeg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/summerschool2019.jpg -> /manus-storage/summerschool2019_a8c7422c.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/teacher2023-9.jpg -> /manus-storage/teacher2023-9_444d1a93.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/teacher2023.jpg -> /manus-storage/teacher2023_29f70a2e.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/wint1.jpg -> /manus-storage/wint1_d6b960d4.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/wint2.jpg -> /manus-storage/wint2_dcea68dd.jpg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/xmas.jpeg -> /manus-storage/xmas_85a27b5b.jpeg
+[SUCCESS] /home/ubuntu/webdev-static-assets/winters-chapel/xmas2018.jpg -> /manus-storage/xmas2018_dfb230a0.jpg
+=====================================
+Total: 17, Success: 17, Failed: 0

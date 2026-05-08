@@ -1,3 +1,6 @@
+/*
+Contemporary Kodomo Modernism global system: warm cream/yellow, sky blue, soft green, real school photography, tactile paper-label motifs, gentle asymmetry, accessible hierarchy, and restrained parent-reassuring motion.
+*/
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -8,6 +11,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-display: "Fraunces", "Noto Serif JP", serif;
+  --font-sans: "Noto Sans", "Noto Sans JP", "Noto Sans SC", system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -43,83 +48,90 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
+  --radius: 1rem;
+  --background: oklch(0.988 0.022 92);
+  --foreground: oklch(0.245 0.028 151);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
+  --card-foreground: oklch(0.245 0.028 151);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
+  --popover-foreground: oklch(0.245 0.028 151);
+  --primary: oklch(0.45 0.101 221);
+  --primary-foreground: oklch(0.985 0.018 92);
+  --secondary: oklch(0.935 0.045 151);
+  --secondary-foreground: oklch(0.31 0.055 151);
+  --muted: oklch(0.948 0.027 91);
+  --muted-foreground: oklch(0.45 0.035 151);
+  --accent: oklch(0.845 0.12 83);
+  --accent-foreground: oklch(0.245 0.028 151);
+  --destructive: oklch(0.57 0.19 28);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --border: oklch(0.88 0.035 138);
+  --input: oklch(0.9 0.025 138);
+  --ring: oklch(0.45 0.101 221);
+  --chart-1: oklch(0.71 0.11 83);
+  --chart-2: oklch(0.69 0.075 221);
+  --chart-3: oklch(0.72 0.075 151);
+  --chart-4: oklch(0.68 0.12 34);
+  --chart-5: oklch(0.54 0.09 221);
+  --sidebar: oklch(0.985 0.018 92);
+  --sidebar-foreground: oklch(0.245 0.028 151);
+  --sidebar-primary: oklch(0.45 0.101 221);
+  --sidebar-primary-foreground: oklch(0.985 0.018 92);
+  --sidebar-accent: oklch(0.935 0.045 151);
+  --sidebar-accent-foreground: oklch(0.31 0.055 151);
+  --sidebar-border: oklch(0.88 0.035 138);
+  --sidebar-ring: oklch(0.45 0.101 221);
 }
 
 .dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
+  --background: oklch(0.17 0.024 151);
+  --foreground: oklch(0.93 0.018 92);
+  --card: oklch(0.22 0.024 151);
+  --card-foreground: oklch(0.93 0.018 92);
+  --popover: oklch(0.22 0.024 151);
+  --popover-foreground: oklch(0.93 0.018 92);
+  --primary: oklch(0.74 0.085 221);
+  --primary-foreground: oklch(0.17 0.024 151);
+  --secondary: oklch(0.27 0.03 151);
+  --secondary-foreground: oklch(0.9 0.018 92);
+  --muted: oklch(0.27 0.03 151);
+  --muted-foreground: oklch(0.74 0.018 92);
+  --accent: oklch(0.78 0.11 83);
+  --accent-foreground: oklch(0.17 0.024 151);
+  --destructive: oklch(0.7 0.19 28);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.74 0.085 221);
+  --sidebar: oklch(0.22 0.024 151);
+  --sidebar-foreground: oklch(0.93 0.018 92);
+  --sidebar-primary: oklch(0.74 0.085 221);
+  --sidebar-primary-foreground: oklch(0.17 0.024 151);
+  --sidebar-accent: oklch(0.27 0.03 151);
+  --sidebar-accent-foreground: oklch(0.9 0.018 92);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.74 0.085 221);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
+
+  html {
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: #f8ca55;
+    color: #243129;
+  }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
@@ -134,24 +146,11 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -160,18 +159,49 @@
     min-width: 0;
   }
 
+  .section-kicker {
+    @apply mb-3 inline-flex rounded-full bg-white/80 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-[#51725b] shadow-sm;
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-black leading-[1.05] tracking-[-0.035em] text-[#243129] md:text-6xl;
+  }
+
+  .section-copy {
+    @apply mt-5 max-w-3xl text-lg leading-8 text-[#526458];
+  }
+
+  .contact-card {
+    @apply flex items-start gap-4 rounded-[1.6rem] bg-white p-5 font-bold leading-7 text-[#405347] shadow-lg transition hover:-translate-y-0.5 hover:text-[#0d5b75] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0d5b75];
+  }
+
+  .contact-card svg {
+    @apply mt-1 h-6 w-6 shrink-0 text-[#0d5b75];
+  }
+
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
