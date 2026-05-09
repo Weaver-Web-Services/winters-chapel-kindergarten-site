@@ -47,3 +47,7 @@ The development preview loads the redesigned one-page site with the selected war
 ## Responsive refinement verification
 
 After the bilingual header text was added, the standard preview width showed crowding in the top navigation. The header was refined so full navigation and language buttons only appear on very wide screens, while standard desktop, tablet, and mobile widths use a compact menu button. The responsive menu was tested in preview and displays all navigation links plus English, Japanese, and Chinese language controls in a stacked accessible layout. The hero title and affected headings now render ampersands using a clearer sans-serif override instead of the decorative display ampersand.
+
+## Latest uploaded image verification
+
+The newly uploaded `lunchtimeclassroom4.jpg` and `playtimeclassroom.jpg` files were uploaded to web storage without re-opening the attached images. The preview text confirms the updated trust statement reads **Diverse classrooms, caring teachers** in the trust list. The curriculum preview shows the newly provided lunchtime classroom image in the Curriculum & Philosophy section. The classroom section text confirms the first classroom gallery item now reads **Playtime classroom and group learning**, mapped to the newly uploaded playtime classroom asset. The hero overlap was adjusted to keep the requested layered look while reducing right-edge clipping at preview widths.

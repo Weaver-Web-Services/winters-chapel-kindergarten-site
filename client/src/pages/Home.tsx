@@ -34,8 +34,9 @@ const realImages = {
   lunch: "/manus-storage/lunchtimeclassroom_11c17963.jpg",
   lunch2: "/manus-storage/lunchtimeclassroom2_fc6bd5c0.jpg",
   lunch3: "/manus-storage/lunchtimeclassroom3_6aa507c9.jpg",
-  lunch4: "/manus-storage/lunchtimeclassroom4_275b2fbc.jpg",
+  lunch4: "/manus-storage/lunchtimeclassroom4_ba8f19eb.jpg",
   playground: "/manus-storage/playground1_0f714785.jpeg",
+  playtimeClassroom: "/manus-storage/playtimeclassroom_7e8c5b16.jpg",
   summer: "/manus-storage/summerschool2019_a8c7422c.jpg",
   teacherInside: "/manus-storage/teacher2023-9_444d1a93.jpg",
   teacherOutside: "/manus-storage/teacher2023_29f70a2e.jpg",
@@ -65,7 +66,7 @@ const content = {
     enroll: "Enroll Now",
     call: "Call 770-394-3242",
     open: "Open Mon–Fri, 7:30 am – 6:30 pm",
-    trust: ["Quality Rated certification", "Sanctioned by Georgia DECAL", "Japanese + English learning", "Real classrooms, real teachers"],
+    trust: ["Quality Rated certification", "Sanctioned by Georgia DECAL", "Japanese + English learning", "Diverse classrooms, caring teachers"],
     programsTitle: "Programs Offered",
     programsIntro: "Age-appropriate classes are intentionally sized so children can receive close attention, steady routines, and warm guidance.",
     contactRates: "Contact for rates",
@@ -106,7 +107,7 @@ const content = {
     enroll: "入園について相談する",
     call: "770-394-3242へ電話",
     open: "月〜金 7:30 am – 6:30 pm",
-    trust: ["Quality Rated 認証", "Georgia DECAL 認可", "日本語＋英語の学び", "実際の教室と先生"],
+    trust: ["Quality Rated 認証", "Georgia DECAL 認可", "日本語＋英語の学び", "多様な教室と温かい先生"],
     programsTitle: "プログラム",
     programsIntro: "年齢に合ったクラス編成と定員で、一人ひとりに目が届く温かい保育を行います。",
     contactRates: "料金はお問い合わせください",
@@ -147,7 +148,7 @@ const content = {
     enroll: "咨询入学",
     call: "致电 770-394-3242",
     open: "周一至周五 7:30 am – 6:30 pm",
-    trust: ["Quality Rated 认证", "Georgia DECAL 认可", "日语＋英语学习", "真实教室与教师"],
+    trust: ["Quality Rated 认证", "Georgia DECAL 认可", "日语＋英语学习", "多元课堂与关爱教师"],
     programsTitle: "课程项目",
     programsIntro: "各年龄段课程设有合理班级容量，帮助孩子获得稳定作息、细致关注和温暖引导。",
     contactRates: "费用请联系咨询",
@@ -205,7 +206,7 @@ const eventRows = [
 ];
 
 const classroomPhotos = [
-  [realImages.lineup, "Classroom lineup and group learning"],
+  [realImages.playtimeClassroom, "Playtime classroom and group learning"],
   [realImages.artProject, "Art project and creative expression"],
   [realImages.lunch2, "Lunchtime classroom routine"],
   [realImages.playground, "Outdoor playground and active play"],
@@ -349,10 +350,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative mx-auto w-full max-w-2xl lg:max-w-none">
+            <div className="relative mx-auto w-full max-w-2xl pb-14 lg:max-w-none lg:pb-24">
               <div className="absolute -left-4 top-8 z-10 rounded-3xl bg-[#f8ca55] px-5 py-4 font-black text-[#243129] shadow-[0_12px_0_#d9efcb] md:-left-8">{t.open}</div>
               <img src={realImages.exterior} alt="Winters Chapel Kindergarten building exterior" className="aspect-[4/3] w-full rounded-[2.4rem] border-8 border-white object-cover shadow-2xl" />
-              <div className="absolute -bottom-7 right-4 w-56 rounded-[2rem] border-8 border-white bg-white p-2 shadow-2xl md:right-10 md:w-72">
+              <div className="absolute -bottom-8 right-0 w-56 rounded-[2rem] border-8 border-white bg-white p-2 shadow-2xl sm:-right-3 md:-bottom-16 md:-right-6 md:w-72 lg:-bottom-20 lg:-right-8">
                 <img src={realImages.artProject} alt="Children participating in a classroom art project" className="aspect-[4/3] rounded-[1.4rem] object-cover" />
               </div>
             </div>
@@ -395,7 +396,7 @@ export default function Home() {
         <section id="curriculum" className="py-20">
           <div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div className="relative">
-              <img src={realImages.lineup} alt="Children seated in a bright classroom" className="aspect-[4/5] w-full rounded-[2.5rem] border-8 border-white object-cover shadow-2xl" />
+              <img src={realImages.lunch4} alt="Children learning together in a bright classroom" className="aspect-[4/5] w-full rounded-[2.5rem] border-8 border-white object-cover shadow-2xl" />
               <div className="absolute -bottom-6 -right-4 rounded-3xl bg-white p-5 shadow-xl md:-right-10">
                 <Languages className="mb-2 h-8 w-8 text-[#0d5b75]" aria-hidden="true" />
                 <p className="font-black text-[#243129]">Japanese + English</p>
@@ -527,7 +528,7 @@ export default function Home() {
           <div className="container grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
             <div>
               <p className="section-kicker">08 · {t.nav[6]}</p>
-              <h2 className="section-title">{t.contactTitle}</h2>
+              <h2 className="section-title"><ReadableText text={t.contactTitle} /></h2>
               <p className="section-copy">{t.contactIntro}</p>
               <div className="mt-8 grid gap-4">
                 <a href="https://www.google.com/maps/search/?api=1&query=4942%20Winters%20Chapel%20Rd%20Doraville%20GA%2030360" className="contact-card" target="_blank" rel="noreferrer">
